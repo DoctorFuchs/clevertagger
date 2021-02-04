@@ -25,4 +25,4 @@ CRF_BACKEND = 'wapiti'
 CRF_BACKEND_EXEC = 'wapiti'
 
 # location of the trained model (see README for training instructions)
-CRF_MODEL = 'crfmodel'
+CRF_MODEL = '/clevertagger/wapiti_model'
