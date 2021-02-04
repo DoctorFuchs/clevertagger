@@ -60,7 +60,7 @@ def main(args):
         sys.stderr.write('ERROR: --nbesttags and --nbestsents are mutually exclusive options. Aborting.\n')
         exit()
 
-    if args.nbesttags > 1 and CRF_BACKEND == 'Wapiti':
+    if args.nbesttags > 1 and CRF_BACKEND == 'wapiti':
         sys.stderr.write('ERROR: --nbesttags is only supported for CRF++. Aborting.\n')
         exit()
 
@@ -82,7 +82,7 @@ def main(args):
 
     else:
 
-        if CRF_BACKEND == 'Wapiti':
+        if CRF_BACKEND == 'wapiti':
             cmd = [CRF_BACKEND_EXEC, 'label', '-m', args.model]
             if args.nbestsents > 1:
                 cmd += ['-s', '-p', '-n', str(args.nbestsents)]
@@ -127,7 +127,7 @@ class Clevertagger(object):
             self.smor = None
             raise
 
-        if CRF_BACKEND == 'Wapiti':
+        if CRF_BACKEND == 'wapiti':
             tagger_args = ['label', '-m', CRF_MODEL]
             self.tagger = pexpect.spawn(CRF_BACKEND_EXEC, tagger_args, echo=False, encoding='utf-8')
             self.tagger.delaybeforesend = 0
