@@ -22,7 +22,7 @@ CRF_BACKEND = 'wapiti'
 
 # executable file of CRF tool (typically 'wapiti' for wapiti, and 'crf_test' for crf++.
 # may be relative path to clevertagger directory
-CRF_BACKEND_EXEC = '/clevertagger/clevertagger/wapiti'
+CRF_BACKEND_EXEC = '/clevertagger/clevertagger/wapiti/src/wapiti.c'
 
 # location of the trained model (see README for training instructions)
 CRF_MODEL = "wapitiModel.gz"
