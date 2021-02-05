@@ -22,7 +22,7 @@ CRF_BACKEND = 'wapiti'
 
 # executable file of CRF tool (typically 'wapiti' for wapiti, and 'crf_test' for crf++.
 # may be relative path to clevertagger directory
-CRF_BACKEND_EXEC = '/data/zmorge/zmorge-20150315-smor_newlemma.ca'
+CRF_BACKEND_EXEC = '/clevertagger/wapiti'
 
 # location of the trained model (see README for training instructions)
 CRF_MODEL = "/data/zmorge/hdt_ab.zmorge-20140521-smor_newlemma.model"
